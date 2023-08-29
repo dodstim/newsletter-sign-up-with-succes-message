@@ -1,0 +1,159 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+@font-face {
+  font-family: RobotoRegular;
+  src: url(./assets/fonts/Roboto-Regular.ttf) format(truetype);
+}
+
+@font-face {
+  font-family: RobotoBold;
+  src: url(./assets/fonts/Roboto-Bold.ttf) format(truetype);
+}
+
+body {
+  background-color: rgb(54, 56, 77, 100%);
+}
+
+/* ----------
+MOBILE DEVICE
+-----------*/
+#ctnr_all {
+  background-color: white;
+  max-width: 23.438rem;
+  height: 30.825rem;
+  margin: 2rem auto;
+}
+
+#ctnr_content {
+  background-color: white;
+  font-family: RobotoRegular;
+  padding: 15px;
+  margin-top: 15px;
+}
+
+#ctnr_benefits {
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+  margin-top: 2.375rem;
+}
+
+.benefits_items {
+  display: flex;
+  gap: 0.75rem;
+  color: rgb(77, 76, 92, 100%);
+}
+
+.benefits_items > img {
+  width: 24px;
+}
+
+#newsletter {
+  margin-top: 2.375rem;
+}
+
+#newsletter_form {
+  display: flex;
+  flex-direction: column;
+  gap: 0.638rem;
+}
+
+#labels {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+#labels > label {
+  color: rgb(35, 39, 66, 100%);
+  font-size: 0.75rem;
+  font-family: RobotoBold;
+}
+
+#invalid_email {
+  display: none;
+}
+
+#newsletter_form > input {
+  border: 1px solid rgb(196, 196, 198, 100%);
+  border-radius: 5px;
+  padding: 0.875rem;
+}
+
+#newsletter_form > input:focus {
+  outline: none;
+  border: 1px solid rgb(35, 39, 66, 100%);
+}
+
+#newsletter_form > button {
+  background-color: rgb(35, 39, 66, 100%);
+  border-radius: 5px;
+  border: none;
+  color: white;
+  cursor: pointer;
+  margin-top: 0.75rem;
+  padding: 0.875rem;
+  font-size: 1.125rem;
+  font-family: RobotoBold;
+}
+
+#newsletter_form > button:hover {
+  background: linear-gradient(to left, rgb(255, 102, 67, 100%), rgb(255, 84, 115, 100%));
+  -webkit-box-shadow: 3px 10px 29px -11px rgb(255, 84, 115, 100%);
+  -moz-box-shadow: 3px 10px 29px -11px rgb(255, 84, 115, 100%);
+  box-shadow: 3px 10px 29px -11px rgb(255, 84, 115, 100%);
+}
+
+/*--------------------
+  AUTHENTICATION ERROR
+----------------------*/
+.error-states {
+  color: rgb(190, 127, 122, 100%);
+  background-color: rgb(255, 232, 230, 100%);
+  border: 1px solid rgb(190, 127, 122, 100%);
+}
+
+
+
+/*--------------
+  SUCCESS STATES
+---------------*/
+#success_states {
+  font-family: RobotoRegular;
+  display: none;
+  height: 500px;
+}
+
+.success_content {
+  display: flex;
+  flex-direction: column;
+  gap: 1.7rem;
+  padding: 20px;
+}
+
+.success_content > img {
+  width: 65px;
+}
+
+#dismiss_message > button {
+  background-color: rgb(35, 39, 66, 100%);
+  border-radius: 5px;
+  border: none;
+  color: white;
+  cursor: pointer;
+  padding: 0.875rem;
+  font-size: 1.125rem;
+  font-family: RobotoBold;
+  width: 100%;
+}
+
+#dismiss_message > button:hover {
+  background: linear-gradient(to left, rgb(255, 102, 67, 100%), rgb(255, 84, 115, 100%));
+  -webkit-box-shadow: 3px 10px 29px -11px rgb(255, 84, 115, 100%);
+  -moz-box-shadow: 3px 10px 29px -11px rgb(255, 84, 115, 100%);
+  box-shadow: 3px 10px 29px -11px rgb(255, 84, 115, 100%);
+}

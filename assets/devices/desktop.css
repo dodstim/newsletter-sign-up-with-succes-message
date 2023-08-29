@@ -1,0 +1,44 @@
+@media only screen and (min-width: 945px) {
+  #ctnr_all {
+    border-radius: 15px;
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: center;
+    max-width: 58.438rem;
+    height: 40.563rem;
+    gap: 3.85rem;
+    padding: 0 30px;
+    margin: 6rem auto;
+  }
+
+  .ctnr_content {
+    width: 24.313rem;
+  }
+
+  .ctnr_content > h1 {
+    font-family: RobotoBold;
+    font-size: 2.813rem;
+    margin-bottom: 1.2rem;
+  }
+
+  #newsletter {
+    margin-top: 2.388rem;
+  }
+
+/*--------------
+  SUCCESS STATES
+---------------*/
+  #success_states {
+    border-radius: 15px;
+    width: 500px;
+    margin: 0 auto;
+  }
+
+  .success_content {
+    margin-top: 1rem;
+  }
+
+  #dismiss_message > button {
+    margin-top: 0px;
+  }
+}

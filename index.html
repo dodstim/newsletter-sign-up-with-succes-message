@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Newsletter sign up with success message main</title>
+    <link rel="icon" type="image/x-icon" href="./assets/images/favicon-32x32.png" />
+    <link rel="stylesheet" type="text/css" href="style.css" />
+    <link rel="stylesheet" type="text/css" href="./assets/devices/desktop.css" />
+  </head>
+  <body>
+    <main id="ctnr_all">
+      <div id="ctnr_img">
+        <picture>
+          <source srcset="./assets/images/illustration-sign-up-desktop.svg" media="(min-width: 945px)" />
+          <img src="./assets/images/illustration-sign-up-mobile.svg" alt="illustration sign up mobile" />
+        </picture>
+      </div>
+      <div id="ctnr_content">
+        <h1>Stay Updated!</h1>
+        <p>Join 60,000+ product managers receiving monthly updates on:</p>
+        <div>
+          <ul id="ctnr_benefits">
+            <li class="benefits_items">
+              <img src="./assets/images/icon-list.svg" alt="icon list"/>
+              Product discovery and building what matters
+            </li>
+            <li class="benefits_items">
+              <img src="./assets/images/icon-list.svg" alt="icon list"/>
+              Measuring to ensure updates are a success
+            </li>
+            <li class="benefits_items">
+              <img src="./assets/images/icon-list.svg" alt="icon list"/>
+              And much more!
+            </li>
+          </ul>
+        </div>
+        <div>
+          <form id="newsletter" action="#">
+            <div id="newsletter_form">
+              <div id="labels">
+                <label>Email address</label>
+                <label id="invalid_email">Valid email required!</label>
+              </div>
+              <input id="email_user" type="email" placeholder="email@company" minlength="4" maxlength="20" />
+              <button id="subscribe_newsletter" type="submit">Subscribe to monthly newsletter</button>
+            </div>
+          </form>
+        </div>
+      </div>
+
+      <div id="success_states">
+        <div class="success_content">
+          <img src="./assets/images/icon-success.svg" alt="icon checked success" />
+          <h1>Thanks for subscribing!</h1>
+          <p>
+            A confirmation email has been send to <span id="sendto">example@company.com</span>.
+            Please open it and click the button inside to confirm your subscription.
+          </p>
+          <div id="dismiss_message">
+            <button id="dmss">Dismiss message</button>
+          </divv>
+        </div>
+      </div>
+      <script src="script.js"></script>
+    </main>
+  </body>
+</html>
